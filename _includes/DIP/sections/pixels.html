@@ -1,9 +1,53 @@
 <h3 id="pixelManipulationSection">1. Pixel Manipulation</h3>
-<ul class="list-unstyled">
-  <li>
+<ul class="spaced-container list-unstyled">
+  <li class="spaced-container">
     <h4 id="negativeSection">Negative</h4>
+    <div class="section-description">
+      <p>
+      In order to get the negative of an grayscale image, the pixels are replaced with its complement.
+      So say a pixel has value of 55, its new value will be 200 as 255 - 55 = 200.
+      <br/>
+      The algorithm here will ask for two points to stabilish a rectangle inside the default image. Then
+      it will replace each pixel with its complement and will have a desired result similar to the image bellow:
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/biel.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/pixel/negative/negative.png" | relative_url }}"/>
+      </div>
+      <p>To get the result above, the following points were chosen:</p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/pixel/negative/log.png" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/Pixel%20Manipulation/Regions" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
-  <li>
+  <li class="spaced-container">
     <h4 id="swappingRegionsSection">Swapping Regions</h4>
+    <div class="section-description">
+      <p>
+        In here we wanted to split the image into for equal parts and perform a swap between the first and foruth
+        and between the second and third. This can be achieved either by direct pixel manipulation or manipulating
+        multiple Mat objects. The result in both mathods should be the same and is given bellow:
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/biel.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/pixel/regions/swapped.png" | relative_url }}"/>
+      </div>
+      <p>Here's a log example for this:</p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/pixel/regions/log.png" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/Pixel%20Manipulation/SwappedRegions" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
 </ul>

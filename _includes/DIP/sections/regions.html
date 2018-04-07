@@ -1,7 +1,35 @@
 <h3 id="regionDetectionSection">2. Region Detection</h3>
-
-<ul class="list-unstyled">
-  <li>
+<ul class="spaced-container list-unstyled">
+  <li class="spaced-container">
     <h4 id="labellingSection">Labelling</h4>
+    <div class="section-description">
+      <p>
+      In the example found <a href="http://agostinhobritojr.github.io/tutoriais/pdi/#_preenchendo_regi%C3%B5es" target="_blank">here</a>
+      there is a little bug: since it is choosing the grayscale for each pixel based on the number of objects found in the image, if
+      the image contains more than 255 objects, it will default to 255 (normal behavior of flooFill() function when given an integer out of range).
+      Thus, we can change it to the division remainder of numberOfObjects by 255 or we can just set its value to a constant number between 0 - 255
+      (note that choosing 0 or 255 may compromise the algorithm as one of these numbers are considered to identify the background and the other in
+      considered to identify contours). <br/>
+      The <a href="http://agostinhobritojr.github.io/tutoriais/pdi/#_preenchendo_regi%C3%B5es" target="_blank">algorithm metioned</a> was changed
+      to identify closed objects that may or may not be fulfilled, disconsidering objects touching the border of the image.<br/>
+      The result is shown bellow:
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/regions/bolhas.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/regions/mid1.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/regions/mid2.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/regions/mid3.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/regions/labelling.png" | relative_url }}"/>
+      </div>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/regions/log.png" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/DetectingRegions/Labelling" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
 </ul>

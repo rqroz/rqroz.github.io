@@ -74,3 +74,16 @@ a:hover {
 section {
 	margin: 2rem;
 }
+
+.container {
+	width: auto !important;
+}
+
+.spaced-container {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.spaced-container img {
+	margin-bottom: 0.5rem;
+}
