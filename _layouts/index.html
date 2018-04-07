@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include navbar.html %}
+    {% include header.html %}
+
+    <script src="{{ "/assets/vendor/jquery/jquery.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+
+</html>

@@ -16,14 +16,15 @@
 title: Rodolfo Queiroz
 email: rqroz1@gmail.com
 description: "" # >- means to ignore newlines until "baseurl:"
-  
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  rqroz
+twitter_username:
+github_username: rqroz
 
 show_downloads: false
 
+permalink: none # stands for -> /:categories/:title:output_ext
 
 # Build settings
 markdown: kramdown

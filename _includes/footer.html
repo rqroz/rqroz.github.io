@@ -1,27 +1,28 @@
 <footer class="site-footer">
-  <div class="wrapper">
-      {% if site.github_username %}
-      <div class="footer-col">
-        <ul class="social-media-list">
-          <li><span class="fa fa-github"></span>&nbsp;<a href="https://github.com/{{ include.username }}">Github</a></li>
-        </ul>
-      </div>
-      {% endif %}
-
-      {% if site.email %}
-      <div class="footer-col">
-        <ul class="contact-list">
-            <li><span class="fa fa-envelope"></span>&nbsp;<a href="mailto:{{ site.email }}">Mail</a></li>
-        </ul>
-      </div>
+  <div class="row text-center">
+    {% if site.github_username %}
+    <div class="col-md-6">
+      <ul class="social-media-list">
+        <li><span class="fa fa-github"></span>&nbsp;<a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a></li>
+      </ul>
+    </div>
+    {% endif %}
+    {% if site.email %}
+    <div class="col-md-6">
+      <ul class="contact-list">
+          <li><span class="fa fa-envelope"></span>&nbsp;<a href="mailto:{{ site.email }}">Mail</a></li>
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  <div class="row text-center">
+    <div class="col-md-12">
+      <span class="fa fa-copyright"></span>&nbsp;
+      {% if site.author %}
+        {{ site.author | escape }}
+      {% else %}
+        {{ site.title | escape }}
       {% endif %}
     </div>
-    <div class="footer-ending"><span class="fa fa-copyright"></span>&nbsp;
-        {% if site.author %}
-          {{ site.author | escape }}
-        {% else %}
-          {{ site.title | escape }}
-        {% endif %}
-      </div>
   </div>
 </footer>

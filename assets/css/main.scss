@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+body {
+	padding-top: 51px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -11,16 +15,20 @@ a:hover {
 	text-decoration: none !important;
 }
 
+.navbar {
+	margin-bottom: 0px !important;
+}
+
 .coding-header {
 	background-color: rgb(39, 38, 34);
-	background-image:url('./img/bg.jpeg'); 
-	background-repeat: no-repeat; 
-	background-size: 100%; 
+	background-image:url('../img/bg.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100%;
 	background-position: center center;
 }
 
 .project-name {
-	margin: 3rem;
+	// margin: 3rem;
 	display: inline-block;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
@@ -31,6 +39,8 @@ a:hover {
 .page-header {
 	color: #fff;
 	text-align: center;
+	margin: 0px;
+	padding: 80px 96px !important;
 }
 
 .project-name a {
@@ -39,32 +49,28 @@ a:hover {
 
 @media screen and (min-width: 64em) {
 	.page-header {
-	    padding: 5rem 6rem;
-	}	
+		// padding: 5rem 6rem;
+	}
 
 	.project-name {
-	    font-size: 3.25rem;
+		// font-size: 3.25rem;
 	}
 }
 
 .site-footer {
 	text-align: center !important;
-}
-
-footer {
-	color: rgb(39, 38, 34);
-}
-
-.footer-ending {
 	color: #828282;
-	font-size: smaller;
 }
 
-.footer-col {
-	width: -webkit-calc(100%/2 - 30px);
-    width: calc(100%/2 - 30px);
-}
-
-.footer-col a {
+.site-footer a {
 	color: #828282;
+}
+
+
+.site-footer span {
+	color: #272622;
+}
+
+section {
+	margin: 2rem;
 }
