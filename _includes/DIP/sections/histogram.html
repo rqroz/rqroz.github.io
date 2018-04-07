@@ -1,10 +1,53 @@
 <h3 id="histogramSection">3. Histogram Manipulation</h3>
 <ul class="list-unstyled">
   <li class="spaced-container">
-    <h4 id="equalizingSection">Equalizing Images</h4>
-    
+    <h4 id="equalizingSection">3.1. Equalizing Images</h4>
+    <div class="section-description">
+      <p>
+      Histogram equalization is a method to increase the global contrast of an image. In here, we are constantly capturing
+      images from the webcam. We then convert each of the images to grayscale and get their histograms. Finally, we perform
+      equalization on these histograms, displaying both images (normal and equalized) side by side on real time.
+      Bellow are two examples:
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/equalizer/eq1.png" | relative_url }}"/>
+        <img src="{{ "/assets/img/dip/equalizer/eq2.png" | relative_url }}"/>
+      </div>
+      <p>
+        As we can see from the images above, the images on the right side (equalized) contain a histogram more spreaded,
+        which gives us the idea of more contrast.
+      </p>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/Histogram/Equalizer" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
   <li>
-    <h4 id="motionDetectionSection">Motion Detection</h4>
+    <h4 id="motionDetectionSection">4.1. Motion Detection</h4>
+    <div class="section-description">
+      <p>
+      In order to detect moviment while recording something, we need to perform a histogram comparison between the
+      current frame and the last (which will be at a rate decided by the project). In here, we are always comparing
+      the current frame with the imediate previous. When the difference between the two histograms are considerable,
+      we put a text on the current frame informing that a moviment was detected and save this frame on the same folder
+      of the program running.
+      For a real world application, you could save the images at a safer location and instead of replacing the image
+      saved at each new moviment detection, you should save it with a different name in order to keep track of each detection.
+
+      Bellow is a resulting example when the camera detects something:
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/motion/someone.png" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/Histogram/MotionDetection" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
 </ul>

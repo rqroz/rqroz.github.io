@@ -1,12 +1,59 @@
 <h3 id="filteringSection">4. Spatial Domain Filtering</h3>
 <ul class="list-unstyled">
-  <li>
-    <h4 id="spatialFilterSection">Spatial Filter</h4>
+  <li class="spaced-container">
+    <h4 id="spatialFilterSection">4.1. Spatial Filter</h4>
+    <div class="section-description">
+      <p>
+      Spatial filters are used to perform digital convolution in order to modify or enhance an image. Filtering is known to be
+      a neighbourhood operation as the new value for each pixel depends on the values of the pixels around it as the mask (filter)
+      runs through the image matrix. <br/>
+      Bellow is an example of an image after applying the laplacian of gaussian filter.
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/spatialFiltering/lapgauss.png" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/SpatialDomainFiltering/SpatialFilter/LaplacianOfGaussian" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
   <li>
-    <h4 id="tiltShiftSection">Tilt Shift</h4>
+    <h4 id="tiltShiftSection">4.2. Tilt Shift</h4>
+    <div class="section-description">
+      <p>
+      
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/spatialFiltering/tiltshift.png" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/SpatialDomainFiltering/TiltShift/TiltShift" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
   <li>
-    <h4 id="tiltShiftVideoSection">Tilt Shift Video</h4>
+    <h4 id="tiltShiftVideoSection">4.2. Tilt Shift Video</h4>
+    <div class="section-description">
+      <p>
+      In here we used the concept discussed above to blur out frames of a video. We then selected frames at an specific
+      rate and created a stop motion video with these frames and saved it on the computer. Bellow is a gif of a resulting
+      example (original can be found <a href="https://github.com/rqroz/PDI/blob/master/SpatialDomainFiltering/TiltShift/StopMotion/stopmotion.avi" target="_blank">here</a>):
+      </p>
+      <div class="spaced-container">
+        <img src="{{ "/assets/img/dip/spatialFiltering/stopmotion.gif" | relative_url }}"/>
+      </div>
+      <div class="code-reference">
+        <a href="https://github.com/rqroz/PDI/tree/master/SpatialDomainFiltering/TiltShift/StopMotion" target="_blank">
+          <span class="fa fa-code"></span>
+          Click here and go check the code.
+        </a>
+      </div>
+    </div>
   </li>
 </ul>
