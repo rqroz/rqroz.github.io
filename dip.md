@@ -16,6 +16,7 @@ permalink: "/DIP/"
   position: fixed;
   left: 0;
   right: 0;
+  padding-bottom: 100px;
   width: calc(25% - 15px);
   overflow-y: auto;
   background: #222 !important;
